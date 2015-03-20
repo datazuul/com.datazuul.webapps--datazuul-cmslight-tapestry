@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE">
+  <head>
+    <title>DateiBearbeiten</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" title="style" />
+    <script type="text/javascript" src="javascript/pixocms.js"></script>
+  </head>
+<body jwcid="$content$">
+<span jwcid="@Border">
+<div id="title"><span key="title">Datei bearbeiten</span></div>
+<form jwcid="form" id="simpleForm">
+  <div id="filepath"><b><span key="filepath">Dateipfad</span>:</b>
+    <span jwcid="navigationList">
+      <span jwcid="isNotLastNaviItem">[ <a jwcid="navigationLink" href="#"><span jwcid="navigationText">TOP</span></a> ] / </span>
+      <span jwcid="isLastNaviItem">[ <a jwcid="lastNavigationLink" href="#"><span jwcid="lastNavigationText">TOP</span></a> ] / </span>
+    </span>
+    <input jwcid="txtFilename" type="text" size="25" class="field"/>
+  </div>
+  <div id="formInput">
+    <textarea jwcid="txtFileContent" cols="100" rows="30">
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;de&quot; lang=&quot;de&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt;
+
+&lt;title&gt;Envi Con &amp;amp; Plant Engineering GmbH&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#ffffff&quot;&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;table height=&quot;100%&quot;&gt;
+&lt;tr&gt;&lt;td valign=&quot;middle&quot;&gt;
+
+&lt;!--Im Film verwendete URLs--&gt;
+&lt;!--Im Film verwendeter Text--&gt;
+&lt;object classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0&quot; width=&quot;600&quot; height=&quot;500&quot; id=&quot;intro&quot; align=&quot;middle&quot;&gt;
+
+&lt;param name=&quot;allowScriptAccess&quot; value=&quot;sameDomain&quot; /&gt;
+&lt;param name=&quot;movie&quot; value=&quot;flash/intro.swf&quot; /&gt;
+&lt;param name=&quot;loop&quot; value=&quot;false&quot; /&gt;
+
+&lt;param name=&quot;quality&quot; value=&quot;high&quot; /&gt;
+&lt;param name=&quot;bgcolor&quot; value=&quot;#ffffff&quot; /&gt;
+&lt;embed src=&quot;flash/intro.swf&quot; loop=&quot;false&quot; quality=&quot;high&quot; bgcolor=&quot;#ffffff&quot; width=&quot;600&quot; height=&quot;500&quot; name=&quot;intro&quot; align=&quot;middle&quot; allowScriptAccess=&quot;sameDomain&quot; type=&quot;application/x-shockwave-flash&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; /&gt;
+
+&lt;/object&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;font face=&quot;sans-serif&quot;&gt;&lt;a href=&quot;home.shtml&quot;&gt;weiter&lt;/a&gt;&lt;/font&gt;
+&lt;br/&gt;
+
+&lt;br/&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.macromedia.com/go/getflashplayer/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;flash/get_flash_player.gif&quot; alt=&quot;Download Flash MX Player&quot; border=&quot;0&quot;/&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <div align="center">
+      <span jwcid="isNotMarked"><input jwcid="btnMark" type="submit" value="bearbeitbaren Bereich eingrenzen" onclick="return markCMSArea();" style="margin-right: 3px;" class="button" /></span>
+      <span jwcid="isMarked"><input jwcid="btnDemark" type="submit" value="Eingrenzung aufheben" onclick="return demarkCMSArea();" style="margin-right: 3px;" class="button" /></span>
+    </div>
+  </div>
+  <div id="formSubmit">
+    <div class="buttons">
+      <span jwcid="hasPreview"><input jwcid="btnPreview" type="submit" value="Vorschau" style="margin-right: 3px;" class="button"/></span>
+      <span jwcid="hasNoPreview"><input jwcid="btnSave" type="submit" value="Speichern" style="margin-right: 3px;" class="button"/></span>
+    </div>
+  </div>
+  <span jwcid="markScript"/>
+</form>
+</span>
+</body>
+</html>

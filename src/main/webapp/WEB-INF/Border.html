@@ -1,0 +1,32 @@
+<html jwcid="@Shell" title="picoCMSlight"
+	stylesheet="ognl:assets.stylesheet">
+<body jwcid="@Body">
+	<div id="wrapper">
+		<div id="header">
+			<div id="headerLeft">datazuul's CMS light V 1.2</div>
+			<div id="headerRight">
+				<span class="logoleft">d&nbsp;a&nbsp;t&nbsp;a</span><span
+					class="logoright">&nbsp;z&nbsp;u&nbsp;u&nbsp;l</span>
+			</div>
+		</div>
+		<div id="menu">
+			[ <a href="#" jwcid="logout"><span key="logout">Abmelden</span>
+			</a> ]
+		</div>
+		<div id="content">
+			<span jwcid="hasMessages">
+				<div id="errors">
+					<ul>
+						<span jwcid="messageList">
+							<li><span jwcid="error">Fehlermeldung</span>
+						</li> </span>
+					</ul>
+				</div> </span> <span jwcid="@RenderBody">Seitenspezifischer Inhalt.</span>
+		</div>
+		<div id="footer">
+			Copyright &copy; 2004-2011 <a href="http://www.datazuul.com/"
+				target="_blank">datazuul</a>
+		</div>
+	</div>
+</body>
+</html>

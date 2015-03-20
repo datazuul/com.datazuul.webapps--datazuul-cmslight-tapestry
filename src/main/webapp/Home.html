@@ -1,0 +1,54 @@
+<html jwcid="@Shell" title="message:title" stylesheet="ognl:assets.stylesheet">
+  <head jwcid="$remove$">
+    <link rel="stylesheet" type="text/css" href="css/global.css" title="style" />
+    <script type="text/javascript" src="javascript/pixocms.js"></script>
+  </head>
+<body jwcid="@Body">
+<div id="wrapper">
+  <div id="header">
+    <div id="headerLeft">
+      <div id="language">
+        <a href="#" jwcid="linkGerman"><img jwcid="imgGermanFlag" class="action"/></a>
+        <a href="#" jwcid="linkEnglish"><img jwcid="imgEnglishFlag" class="action"/></a>
+      </div>
+    </div>
+    <div id="headerRight"><span class="logoleft">d&nbsp;a&nbsp;t&nbsp;a</span><span class="logoright">&nbsp;z&nbsp;u&nbsp;u&nbsp;l</span></div>
+  </div>
+  
+  <div id="menu">
+  </div>
+
+  <div id="content">
+    <div id="title"><span key="title">Login</span></div>
+    <span jwcid="hasMessages">
+      <div id="errors">
+        <ul>
+        <span jwcid="messageList">
+        <li><span jwcid="error">Fehlermeldung</span></li>
+        </span>
+    	  </ul>
+      </div>
+    </span>
+    <form jwcid="form">
+    <div id="formInput">
+      <div class="row">
+        <span class="label"><label for="userName"><span jwcid="lblUsername">Ihr Benutzername</span>:</label></span>
+        <span class="formw"><input jwcid="inputUserName" type="text" maxlength="50" size="23" tabindex="1" id="user_name"/></span>
+      </div>
+      <div class="row">
+        <span class="label"><label for="passWord"><span jwcid="lblPassword">Ihr Passwort</span>:</label></span>
+        <span class="formw"><input jwcid="inputPassword" type="password" maxlength="50" size="23" tabindex="2" id="pass_word"/></span>
+      </div>
+      <div class="spacer"></div>
+    </div>
+    <div id="formSubmit">
+      <div class="buttons">
+        <input jwcid="submit" type="submit" tabindex="3" style="margin-right: 3px;" class="button" />
+      </div>
+    </div>
+    </form>
+  </div>
+  <div id="footer">Copyright 2004-2011 <a href="http://www.datazuul.com/" target="_blank">datazuul</a></div>
+</div>
+</body>
+</html>

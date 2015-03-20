@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<users>
+  <user id="0001" username="www.datazuul.com" fromAddress="ralf.eichinger@pixotec.de" fullName="Ralf Eichinger" password="clearpass">
+    <website documentRoot="/home/www/www.datazuul.com/htdocs" url="http://www.datazuul.com/"/>
+  </user>
+  <user id="0002" username="www.domain2.com" fromAddress="ralf.eichinger@pixotec.de" fullName="Ralf Eichinger" password="clearpass2">
+    <website documentRoot="/home/www/www.domain2.com/htdocs" url="http://www.domain2.com/"/>
+  </user>
+  <user id="0003" username="www.domain3.org" fromAddress="ralf.eichinger@pixotec.de" fullName="Ralf Eichinger" password="clearpass3">
+    <website documentRoot="/home/www/www.domain3.org/htdocs" url="http://www.domain3.org/"/>
+  </user>
+  <user id="0004" username="test" fromAddress="ralf.eichinger@pixotec.de" fullName="Ralf Eichinger" password="test">
+    <website documentRoot="/home/www/test/htdocs" url="http://www.yahoo.de/"/>
+  </user>
+</users>

@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE">
+  <head>
+    <title>DateiManager</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" title="style" />
+    <script type="text/javascript" src="javascript/pixocms.js"></script>
+  </head>
+<body jwcid="$content$">
+<span jwcid="@Border">
+<div id="title"><span key="title">Dateimanager</span></div>
+<div id="website"><b><span key="website">Website</span>:</b> <a jwcid="urlWebsite" href="http://envi-con.pixotec.lan/" target="_blank"><span jwcid="urlWebsiteText">http://envi-con.pixotec.lan/</span></a></div>
+<div id="filepath"><b><span key="directory">Verzeichnis</span>:</b>
+ <span jwcid="navigationList">
+   <span jwcid="isNotLastNaviItem">[ <a jwcid="navigationLink" href="#"><span jwcid="navigationText">TOP</span></a> ] / </span>
+   <span jwcid="isLastNaviItem">[ <span jwcid="lastNavigationText">TOP</span> ]</span>
+ </span>
+</div>
+<form jwcid="form" id="simpleForm">
+  <div id="formInput">
+    <table jwcid="tableView" class="itemlist">
+      <!--
+      <tr>
+        <td colspan="6"><span jwcid="tablePages@contrib:TableFormPages"/></td>
+      </tr>
+      -->
+      <tr>
+        <th></th>
+        <th jwcid="tableColumns"/>
+        <th><span key="action">Aktion</span></th>
+      </tr>
+      <tr jwcid="tableFormRows">
+        <td align="center"><span jwcid="checkbox"/></td>
+        <td jwcid="tableValues" align="right"/>
+        <td align="right">
+          <table class="icongroup">
+            <tr>
+              <span jwcid="hasFileActions">
+              <span jwcid="isEditable2">
+              <td><input jwcid="doEdit" type="image" src="images/pen.gif" class="icon"/></td>
+              </span>
+              <td><a jwcid="doView" href="#" target="_blank" class="icon"><img jwcid="view" src="images/eye.gif" class="action" /></a></td>
+              </span>
+              <td><input jwcid="doDelete" type="image" src="images/trash.gif" class="icon"/></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <span jwcid="typeColumnValue@Block">
+        <span jwcid="isDirectory"><img jwcid="folder" src="images/folder.gif" class="icon" /></span>
+        <span jwcid="isFile"><img jwcid="file" src="images/file.gif" class="icon" /></span>
+      </span>
+      <span jwcid="nameColumnValue@Block">
+        <span jwcid="isEditable"><a href="#" jwcid="filenameEditLink"><span jwcid="filename">dateiname</span></a></span>
+        <span jwcid="isNotEditable"><span jwcid="filename2">dateiname</span></span>
+      </span>
+    </table>
+  </div>
+  
+  <div id="formSubmit">
+    <div class="tableActions">
+      <select jwcid="tableActions"/>
+      <input type="submit" jwcid="doGo" value="Los!" style="margin-right: 3px;" class="button"/>
+    </div>
+    <div class="buttons">
+      <input type="submit" jwcid="doAdd" value="Neue Datei/Verzeichnis..." style="margin-right: 3px;" class="button"/>
+    </div>
+  </div>
+</form>
+</span>
+</body>
+</html>

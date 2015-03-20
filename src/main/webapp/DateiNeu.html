@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de-DE" xml:lang="de-DE">
+  <head>
+    <title>DateiNeu</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css" title="style" />
+    <script type="text/javascript" src="javascript/pixocms.js"></script>
+  </head>
+<body jwcid="$content$">
+<span jwcid="@Border">
+<div id="title"><span key="title">Neue Datei/Verzeichnis</span></div>
+<script type="text/javascript" language="JavaScript">
+<!--
+  function isFile()
+  {
+    document.getElementById("file").style.display='';
+  }
+  function isDirectory()
+  {
+    document.getElementById("file").style.display='none';
+  }
+//-->
+</script>
+
+<div id="filepath"><b><span key="filepath">Verzeichnispfad</span>:</b>
+ <span jwcid="navigationList">
+   <span jwcid="isNotLastNaviItem">[ <a jwcid="navigationLink" href="#"><span jwcid="navigationText">TOP</span></a> ] / </span>
+   <span jwcid="isLastNaviItem">[ <a jwcid="lastNavigationLink" href="#"><span jwcid="lastNavigationText">TOP</span></a> ]</span>
+</span>
+</div>
+<form jwcid="form" id="simpleForm">
+  <div id="formInput">
+    <fieldset><legend><b><span key="properties">Eigenschaften</span></b></legend>
+      <span jwcid="radioGroup">
+      <div class="row">
+        <span class="label"><span key="file">Datei</span></span>
+        <span class="formw"><input jwcid="radioFile" type="radio" onclick="isFile()" /></span>
+      </div>
+      <div class="row">
+        <span class="label"><span key="directory">Verzeichnis</span></span>
+        <span class="formw"><input jwcid="radioDirectory" type="radio" onclick="isDirectory()" /></span>
+      </div>
+      </span>
+      <div class="row">
+        <span class="label"><span key="file-/directoryname">Datei-/Verzeichnisname</span></span>
+        <span class="formw"><input jwcid="fieldFilename" type="text" size="25" class="field"/></span>
+      </div>
+    </fieldset>
+    
+    <div id="file">
+      <fieldset><legend><b><span key="filecontent">Dateiinhalt</span></b></legend>
+        <div class="row">
+          <span class="label"><span key="from_file">aus Datei</span></span>
+          <span class="formw"><input jwcid="upload" type="file" size="30" class="field" /></span>
+        </div>
+        <b><span key="or">oder</span></b>
+        <div class="row">
+          <span class="label"><span key="from_template">aus Vorlage</span></span>
+          <span class="formw">
+            <select jwcid="templates"><option value="-1"></option></select>
+          </span>
+        </div>
+      </fieldset>
+      <div class="note">
+        <span key="note" raw="true">
+        <b>Hinweis</b>
+        <ul>
+        <li>Wenn Sie keinen Dateiinhalt hochladen und auch keine Vorlage verwenden, wird eine leere Datei mit dem angegebenen Dateinamen erzeugt. Den Inhalt der neuen Datei können Sie dann anschließend im Bearbeitungsmodus erstellen.</li>
+        <li>Wenn Sie einen Dateiinhalt hochladen oder eine Vorlage verwenden, jedoch keinen Dateinamen angeben, wird der Dateiname der hochgeladenen Datei / der Vorlage verwendet.</li>
+        </ul>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="formSubmit">
+    <div class="buttons">
+      <input jwcid="submit" type="submit" style="margin-right: 3px;" class="button" />
+    </div>
+  </div>
+</form>
+</span>
+</body>
+</html>
